@@ -3,6 +3,7 @@ import { RxAvatar } from "react-icons/rx";
 
 import { useState } from "react";
 import Link from "next/link";
+import Button from "./Button";
 
 export default function Navbar({ user }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Navbar({ user }) {
             {!user ? (
               <>
                 <RxAvatar size={30}/>
-                <Link href="/login" className="hover:text-blue-600">Login</Link>
+                <Link href="/login"><Button>Login</Button></Link>
                 <Link href="/register" className="hover:text-blue-600">Register</Link>
               </>
             ) : (
