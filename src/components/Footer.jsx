@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Link href="/" className="text-xl font-bold">
-            <p className="text-4xl font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent">TasteHouse</p>
+            <p className="text-4xl font-bold bg-linear-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent">TasteHouse</p>
           </Link>
           <p className="mt-3 text-sm text-gray-400">
             Where every bite feels like home. Fresh, flavorful, unforgettable.

@@ -34,6 +34,10 @@ const ResponsiveNavbar = ({navItems, pathname, SignInButton, SignUpButton, SignO
                                     <p className="text-sm text-gray-200">
                                         {user.primaryEmailAddress?.emailAddress}
                                     </p>
+                                    <Link href="/user-profile"
+                                    className="block px-4 py-2 hover:bg-gray-100 transition font-medium">
+                                    Profile
+                                </Link>
                                 </div>
                             </div>
 
