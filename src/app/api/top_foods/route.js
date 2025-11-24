@@ -3,7 +3,7 @@ import clientPromise from "@/lib/mongodb";
 export async function GET() {
   const client = await clientPromise;
   const db = client.db("taste_house"); 
-  const foods = await db.collection("foods").find({}).toArray();
+  const foods = await db.collection("foods").find({}).limit(6).toArray();
   return new Response(JSON.stringify(foods), { status: 200 });
 }
 
