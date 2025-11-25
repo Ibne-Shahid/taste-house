@@ -65,7 +65,7 @@ const Page = () => {
 
                 <div className="mb-8">
                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
-                        Product Information
+                        Cuisine Information
                     </h2>
                     <div className="w-20 h-1 bg-blue-500 rounded-full"></div>
                 </div>
