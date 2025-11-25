@@ -17,7 +17,7 @@ const ManageFoodsPage = () => {
         async function fetchFoods() {
             try {
                 setLoading(true)
-                const res = await fetch(`http://localhost:3000/api/foods?email=${email}`);
+                const res = await fetch(`http://localhost:5000/foods?email=${email}`);
                 const data = await res.json();
                 setFoods(data);
             } catch (error) {
@@ -32,13 +32,12 @@ const ManageFoodsPage = () => {
 
 
     const handleDelete = async (id) => {
-        console.log(typeof id);
         
         const confirmed = await confirmWithToast("Are you sure you want to delete this item?");
         if (!confirmed) return;
 
         try {
-            const res = await fetch(`http://localhost:3000/api/foods/${id}`, { method: "DELETE" });
+            const res = await fetch(`http://localhost:5000/foods/${id}`, { method: "DELETE" });
 
             if (res.ok) {
                 setFoods((prev) => prev.filter((item) => item._id !== id));

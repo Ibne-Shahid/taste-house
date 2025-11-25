@@ -14,7 +14,7 @@ const TopFoods = () => {
         const fetchData = async () => {
             try {
                 SetLoading(true)
-                const responese = await fetch('http://localhost:3000/api/foods?type=top')
+                const responese = await fetch('http://localhost:5000/topFoods')
                 const data = await responese.json()
                 setItems(data)
                 SetLoading(false)

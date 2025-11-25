@@ -7,22 +7,17 @@ const Page = () => {
   const [items, setItems] = useState([]);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
-  const [loading, SetLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
   
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        SetLoading(true)
-        const response = await fetch("http://localhost:3000/api/foods");
-        const data = await response.json();
-        setItems(data);
-        SetLoading(false)
-      } catch (error) {
-        console.error("Error fetching foods:", error);
-      }
-    };
-    fetchData();
+    setLoading(true)
+    fetch('http://localhost:5000/foods')
+    .then(res=>res.json())
+    .then(data=>{
+      setItems(data)
+      setLoading(false)
+    })
   }, []);
 
   const filteredItems = items.filter((item) => {
