@@ -1,6 +1,7 @@
 import clientPromise from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 
+
 export async function GET(request) {
   try {
     const client = await clientPromise;

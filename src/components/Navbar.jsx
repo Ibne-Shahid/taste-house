@@ -23,7 +23,7 @@ export default function Navbar() {
         { name: "Home", href: "/" },
         { name: "Foods", href: "/Foods" },
         { name: "AboutUs", href: "/AboutUs" },
-        { name: "Contact", href: "/contact" },
+        { name: "Contact", href: "/ContactUS" },
     ];
 
     return (

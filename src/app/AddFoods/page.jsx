@@ -26,7 +26,7 @@ const Page = () => {
     };
 
     try {
-      const response = await fetch("/api/foods", {
+      const response = await fetch("http://localhost:3000/api/foods", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newFood),
