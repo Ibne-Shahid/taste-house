@@ -6,15 +6,22 @@ import { useAuth } from "@clerk/nextjs";
 
 export default function ClerkEventsToast() {
   const { userId } = useAuth();
-
-  const prevUserId = useRef(null);
+  const initialRender = useRef(true);
+  const previousUser = useRef(null);
 
   useEffect(() => {
-    if (userId && prevUserId.current === null) {
+  
+    if (initialRender.current) {
+      initialRender.current = false;
+      previousUser.current = userId;
+      return;
+    }
+
+    if (!previousUser.current && userId) {
       toast.success("Logged in successfully!");
     }
 
-    prevUserId.current = userId;
+    previousUser.current = userId;
   }, [userId]);
 
   return null;

@@ -1,6 +1,8 @@
 "use client";
 
+import Button from "@/components/Button";
 import { useUser } from "@clerk/nextjs";
+import Link from "next/link";
 import { redirect, useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
@@ -26,8 +28,6 @@ const Page = () => {
         fetchData();
     }, [id]);
 
-    if (isLoaded && !user) redirect("/sign-in");
-
     if (loading) return <div className="flex items-center justify-center py-20">
         <div className="w-10 h-10 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin"></div>
     </div>
@@ -36,7 +36,29 @@ const Page = () => {
     if (!item) return <div className="p-10 text-center text-xl">Item not found.</div>;
 
     return (
-        <div className="min-h-screen bg-linear-to-b from-gray-100 to-gray-300 pb-20">
+        <div className="relative min-h-screen bg-linear-to-b from-gray-100 to-gray-300 pb-20">
+
+            {isLoaded && !user && (
+                <>
+                    <div className="absolute inset-0 backdrop-blur-lg bg-black/40 z-20"></div>
+
+                    <div className="absolute inset-0 flex items-center justify-center z-30">
+                        <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md text-center">
+                            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+                                Sign In Required
+                            </h2>
+                            <p className="text-gray-600 mb-6">
+                                You cannot view this content while you are not signed in.
+                            </p>
+                            <Link href="/sign-in">
+                                <Button className="bg-primary text-white rounded-lg hover:bg-orange-600 transition">
+                                    Go to Login
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </>
+            )}
 
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px] shadow-xl mb-10">
