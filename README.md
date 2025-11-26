@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍽️ TasteHouse
 
-## Getting Started
+<p align="center">
+  <img src="https://i.ibb.co.com/HfVZvKzf/Screenshot-2025-11-26-200122.png" alt="TasteHouse Banner" width="100%" />
+</p>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A community-driven marketplace where anyone can sell and buy homemade foods. TasteHouse connects home chefs with food lovers looking for fresh, authentic, and homemade dishes.
 
-Open []() with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌐 Live Demo
+👉 **[Live Demo Link](https://taste-house-client-side.vercel.app/)**  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
+- 🏠 User-friendly platform for buying & selling homemade food  
+- 🔐 Secure authentication powered by Clerk  
+- 🛒 Add, manage, and purchase food items easily  
+- 🔍 Search & filter homemade dishes  
+- 📦 Order management for sellers  
+- 🌙 Clean UI styled with TailwindCSS + DaisyUI  
+- 📡 Real-time operations with MongoDB & Next.js API routes  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Frontend (Next.js App)**
+- Next.js 16  
+- React 19  
+- Clerk Authentication  
+- TailwindCSS 4  
+- DaisyUI  
+- React Icons  
+- React Toastify  
+- MongoDB  
 
-## Deploy on Vercel
+### **Backend (Server)**
+- Express.js  
+- MongoDB  
+- CORS  
+- dotenv  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
