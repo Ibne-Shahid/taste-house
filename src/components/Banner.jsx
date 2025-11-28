@@ -27,7 +27,7 @@ export default function Hero() {
                         </Button>
                     </Link>
 
-                    <Link href="/AddFoods">
+                    <Link href={isSignedIn?'/AddFoods':'/sign-in'}>
                         <Button className="bg-secondary hover:bg-gray-800 text-white">
                             Start Selling
                         </Button>
