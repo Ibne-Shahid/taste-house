@@ -6,7 +6,7 @@ import Button from "./Button";
 export default function Footer() {
   return (
     <footer className="bg-zinc-900 text-gray-300 pt-16 pb-6">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div data-aos='fade-up' className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Brand */}
         <div>

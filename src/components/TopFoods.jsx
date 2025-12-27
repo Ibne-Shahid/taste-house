@@ -32,7 +32,7 @@ const TopFoods = () => {
 
     return (
         <section className="py-16 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6">
+            <div data-aos='fade-up' className="max-w-7xl mx-auto px-6">
 
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary mb-12">
                     Top Homemade Dishes

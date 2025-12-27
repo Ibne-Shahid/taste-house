@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({ item }) {
     return (
-        <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+        <div data-aos='fade-up' className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
 
             <img
                 src={item.imageUrl}

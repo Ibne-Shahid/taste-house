@@ -42,7 +42,7 @@ export default function WhyChoose() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <section className="py-16 bg-white border-b">
+      <section data-aos='fade-up' className="py-16 bg-white border-b">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold text-gray-900">
             Why Choose TasteHouse?
@@ -54,7 +54,7 @@ export default function WhyChoose() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section data-aos='fade-up' className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div

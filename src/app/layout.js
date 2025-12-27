@@ -4,7 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import ToastProvider from "@/components/ToastProvider";
-import { Providers } from "./providers/Providers";
+import AOSProvider from "@/components/AOSProvider";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +32,12 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <ToastProvider />
-          <Providers>
+          <AOSProvider>
+            <ToastProvider />
             <Navbar></Navbar>
             {children}
             <Footer></Footer>
-          </Providers>
+          </AOSProvider>
         </body>
       </html>
     </ClerkProvider>

@@ -11,7 +11,7 @@ export default function Hero() {
             
             <div className="absolute inset-0 bg-black/30"></div>
 
-            <div className="relative z-10 max-w-2xl px-6">
+            <div data-aos='fade-up' className="relative z-10 max-w-2xl px-6">
                 <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
                     Homemade Food,
                     <span className="text-yellow-400"> Delivered Fresh</span>

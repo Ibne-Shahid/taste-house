@@ -34,7 +34,7 @@ export default function HowItWorks() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <section className="py-16 bg-white border-b">
+      <section data-aos='fade-up' className="py-16 bg-white border-b">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold text-gray-900">How It Works</h1>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section data-aos='fade-up' className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div
@@ -61,7 +61,7 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      <section className="py-20 bg-linear-to-r from-orange-500 to-red-500 text-white">
+      <section data-aos='fade-up' className="py-20 bg-linear-to-r from-orange-500 to-red-500 text-white">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold">Ready to Taste Something New?</h2>
           <p className="mt-3 text-white/90">

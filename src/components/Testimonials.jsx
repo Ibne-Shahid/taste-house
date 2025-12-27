@@ -27,7 +27,7 @@ export default function CustomerTestimonials() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+      <div data-aos='fade-up' className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
             What Our Customers Say
